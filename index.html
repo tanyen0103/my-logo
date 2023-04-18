@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Background for all  -->
+    <div class="background overlay">
+    </div>
+
+    <!-- Navbar only right  -->
+    <nav class="container nav-r">
+        <a href="https://github.com/tanyen0103"><i class="fa-brands fa-github"></i></a>
+    </nav>
+    <!-- End navbar only right  -->
+
+    <!-- Wellcom  -->
+    <div class="container well">
+        <h1 class="border-t-p">WELLCOM</h1>
+        <div class="arrow-down">
+            <p>SCOLL DOWN</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </div>
+    <!-- End Wellcom  -->
+
+    <!-- Logo can change color -->
+    <div class="container change-logo">
+        <h2 class="border-t-p" data-aos="fade-down" >Faculty of Information Technology - AGU</h2>
+        <div class="logo">
+            <button class="btn-red " data-aos="fade-right" onclick="redFuntion()" style="transition: 0.5s;">Red</button>
+            <img class="" data-aos="fade-down" src="images/logo-red.png" alt="" id="changeImg" width="300rem">
+            <button class="btn-blue " data-aos="fade-left" onclick="blueFuntion()" style="transition: 0.5s;">Blue</button>
+        </div>
+    </div>
+    <!-- End Logo change color -->
+
+    <!-- Logo red -->
+    <div class="container change-logo bg-opacity " data-aos="fade-up-right" style="transition: 0.5s;">
+        <div class="row row-logo">
+            <div class="col-6"><img class="" src="images/logo-red.png" alt="" id="changeImg" width="300rem"></div>
+            <div class="col-6"><p>In the realm of information technology, the color red often signifies an error or warning. Red notifications or 
+                alerts are commonly used in user interfaces to indicate that something has gone wrong or requires attention. Additionally, the 
+                color red is sometimes used to highlight important information, such as a critical message or an urgent task. In web development,
+                 red is often used for clickable buttons, links or navigation elements. Overall, the color red is an important visual cue in technology
+                  that helps users navigate and interact with digital interfaces.</p></div>
+        </div>
+    </div>
+    <!-- End Logo red -->
+    <!-- Logo blue -->
+    <div class="container change-logo bg-opacity" data-aos="fade-up-left" style="transition: 0.5s;">
+        <div class="row row-logo">
+            <div class="col-6"><p>
+                The color blue is a popular choice for technology interfaces, particularly in the form of the deep blue-green shade known as "teal" or 
+                "turquoise". This color conveys a sense of calm, trustworthiness, and sophistication. Teal is often used in app designs, social media platforms,
+                 and websites to create a modern, professional look. Additionally, blue light filters have become a common feature in digital devices to reduce eye
+                  strain and improve sleep quality. Overall, the color blue, particularly teal, has a positive association with technology, reliability, and user experience.
+            </p></div>
+            <div class="col-6"><img class="" src="images/logo-blue.png" alt="" id="changeImg" width="300rem"></div>
+        </div>
+    </div>
+    <!-- End Logo blue -->
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/5470c24891.js" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
