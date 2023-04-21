@@ -14,6 +14,18 @@ body{
     src: url("font/UTM\ AVO.TTF");
 }
 
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -113,6 +125,25 @@ h1{
     }
 }
 
+.center-img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:800px){
+    .center-img{
+        width: 80%;
+    }
+}
+
+.center-text{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding: 3.5rem;
+}
+
 .border-t-p{
     border-top: 2px solid #fff ;
     border-bottom: 2px solid #fff ;
@@ -140,7 +171,8 @@ h1{
 }
 
 .change-logo{
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 .change-logo h2{
@@ -152,19 +184,12 @@ h1{
     text-align: justify;
 }
 
-.logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 @media only screen and (max-width:800px){
-    .logo{
-        flex-direction: column;
-    }
+
 }
 
-.logo button{
+button{
     color: #fff;
     margin-top: 2vh;
     width: 10rem;
@@ -176,7 +201,7 @@ h1{
     text-transform: uppercase;
 }
 
-.logo button:hover{
+button:hover{
     cursor: pointer;
     background-color: #fff;
     color: #000;
@@ -189,13 +214,6 @@ h1{
 }
 .btn-blue{
     background-color: #2356e8;
-}
-
-
-.row-logo{
-    height: 30vh;
-    display: flex;
-    align-items: center;
 }
 
 .logo-red{
@@ -211,5 +229,9 @@ h1{
 }
 
 .bg-opacity:hover{
-    box-shadow: 0px 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 13px 0.5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo-inf{
+    margin-bottom: 2rem;
 }
